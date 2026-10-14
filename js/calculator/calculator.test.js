@@ -26,6 +26,10 @@ test('multiply 5 * 6 to equal 30',()=>{
   expect(calculator.multiply(5,6)).toBe(30);
 });
 
+test('multiply 5 * 0 to equal 0',()=>{
+  expect(calculator.multiply(5,0)).toBe(0);
+});
+
 
 
 //pruebas dividir
@@ -36,3 +40,10 @@ test('divide 12/4 to equals 3',()=>{
 test('divide -20/5 to equals -4',()=>{
   expect(calculator.divide(-20,5)).toBe(-4);
 });
+
+//*Expected: 0 | Received: Infinity*/
+test('divide 5 / 0 to equal undefined',()=>{
+  expect(calculator.divide(5,0)).toBe("Error, no se puede dividir por 0");
+});
+
+

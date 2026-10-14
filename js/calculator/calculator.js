@@ -22,8 +22,16 @@ const subtract = function(a, b) {
   return a - b;
 }
 
+
+//refactorizacion 
 function divide(a, b){
-  return a / b;
+  let resultado;
+  if (b===0){
+    resultado = "Error, no se puede dividir por 0"
+  }else{
+    resultado = a/b;
+  }
+   return resultado;
 }
 
 function multiply(a, b){
